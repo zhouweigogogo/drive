@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>user_manage</class>
+ <widget class="QMainWindow" name="user_manage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>675</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="whatsThis">
+   <string>usermanager-box</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1040</width>
+      <height>650</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>usermanager-main-box</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>0</y>
+       <width>881</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="whatsThis">
+      <string>user-table</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <column>
+      <property name="text">
+       <string>用户账号</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>用户昵称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>用户密码</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>用户权限</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>160</width>
+       <height>650</height>
+      </rect>
+     </property>
+     <property name="whatsThis">
+      <string>usermanager-oprater</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPushButton" name="delete_user">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>140</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>btn</string>
+      </property>
+      <property name="text">
+       <string>删除用户</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modify_passwd">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>140</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>btn</string>
+      </property>
+      <property name="text">
+       <string>修改密码</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="update_data">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>140</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>btn</string>
+      </property>
+      <property name="text">
+       <string>更新数据</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>140</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>btn</string>
+      </property>
+      <property name="text">
+       <string>退        出</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modify_nickname">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>140</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="whatsThis">
+       <string>btn</string>
+      </property>
+      <property name="text">
+       <string>修改昵称</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>410</y>
+        <width>131</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="whatsThis">
+       <string>attention-label</string>
+      </property>
+      <property name="text">
+       <string>注意事项：用户密码显示为加密后的文本</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

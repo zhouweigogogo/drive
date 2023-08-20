@@ -1,0 +1,248 @@
+QMainWindow[whatsThis=mainwindow-box]{
+
+   background-color:rgb(211,211,211,0.5); /*主界面背景*/
+}
+
+QWidget[whatsThis=operate-box]{
+   background-color: qlineargradient(x1:0, y0:0, x2:1, y2:1,stop:0 rgb(211, 211, 211), stop:1 rgb(128, 128, 128));			/*主界面左侧背景:渐变颜色两个rgb分别为起止rgb*/
+   border-radius:10px;
+   border-bottom-left-radius:10px;
+}
+
+QLabel[whatsThis=video-label-play]{
+   border-top-right-radius:10px;
+}
+
+QScrollArea{
+   background: transparent;
+   border-top: 2px solid #e4e4e4;
+   border-color:qlineargradient(x1:0, y0:0, x2:1, y2:0,stop:0 rgb(128,128,128), stop:1 rgb(211,211,211));	/*主界面右下角提示框顶部线条颜色，渐变，起止rgb*/
+}
+
+QWidget#scrollAreaWidgetContents{
+   background: transparent;
+}
+
+QWidget[whatsThis=main-box]{
+   border-radius:10px;
+   
+   background-color:rgba(128,128,128,0.6);  /*主界面透明背景颜色rgba最后一个为透明度*/
+
+}
+QLabel[whatsThis=version-label]{
+
+    font-size: 18px;
+    color: rgb(211,211,211);
+ 
+    border-style: solid;
+    border-width: 2px;
+    border-color: #2E3648;
+    border-radius: 20px;
+    padding-bottom:5px;	/*new*/
+ 
+    background-color: qlineargradient(x1:1, y0:0, x2:0, y2:0,stop:0 rgb(128,128,128), stop:1 rgb(64,64,64));			/*主界面版本标签背景颜色，渐变*/
+    background-position: left center;
+}
+QLabel[whatsThis=tip-label]{
+   color:rgb(255,140,0);			/*主界面右下角提示的字颜色*/
+   font-size:28px;
+}
+ 
+
+QPushButton[whatsThis=btn]{
+   border: none;
+   border-radius:10px;
+   background-color: rgb(135,206,250);		/*所有按钮的背景颜色*/
+   
+}
+QPushButton[whatsThis=btn]:hover{
+   border: none;
+   border-radius:10px;
+   
+   background-color:rgb(100,180,225);		/*所有按钮被鼠标碰到时候的颜色*/
+}
+
+QComboBox{
+   border-radius:5px;
+}
+
+QGroupBox[whatsThis=usermanager-oprater]{
+   background-color: qlineargradient(x1:0, y0:0, x2:1, y2:1,stop:0 rgb(211, 211, 211), stop:1 rgb(128, 128, 128));				/*用户管理左侧背景颜色，渐变色*/
+   border-radius:10px;
+   border-bottom-left-radius:10px;
+}
+
+QMainWindow[whatsThis=usermanager-box]{
+   background-color:rgb(128,128,128,0.5);	/*用户管理窗口背景rgba最后为透明度*/
+}
+QWidget[whatsThis=usermanager-main-box]{
+   border-radius:10px;
+   background-color:rgba(128,128,128,0.7);	/*用户管理整个窗口透明背景rgba最后为透明度*/
+   border:none;
+}
+
+QTableWidget{   
+    background: transparent;    
+    border:none;
+}
+QHeaderView{
+    background:transparent;        
+}
+QTableWidget::item
+{
+    border:none;
+    border-top:1px solid rgb(135,206,250) ;	/*用户管理右侧用户显示底部线条颜色*/
+}
+QHeaderView::section           
+{
+    font-size:18px;                
+    color:#000;			/*用户管理右侧顶部表格列标题字体颜色*/
+    background-color: transparent;    
+    border:none; 
+
+}
+QLabel[whatsThis=attention-label]{
+   color:rgb(139,0,0);			/*用户管理注意事项字体颜色*/
+   font-size:28px;
+}
+
+QWidget[whatsThis=model-choose-box]{
+   border-radius:10px;
+   background-color:rgba(128,128,128,0.6);	/*模型配置半透明背景rgba最后为透明度*/
+   border:none;
+}
+
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+QComboBox::down-arrow {
+    border-image: url(/home/acoinfo/Desktop/qt_code/qt5_x64/qtcss/source/list-down.png);
+
+}
+
+QComboBox QAbstractItemView {
+    border: 2px solid #f3f3f3;
+    background-color: rgba(237, 242, 255, 1);
+    border-radius: 15px;
+    padding: 1px 2px 1px 2px;
+}
+
+QComboBox QAbstractItemView::item {
+    border-radius: 15px;
+    height: 30px;
+    background-color: rgb(237, 242, 255);
+    font-size:18px;
+
+}
+
+QWidget[whatsThis=model-choose-oprate]{
+    background-color: qlineargradient(x1:0, y0:0, x2:1, y2:1,stop:0 rgb(211, 211, 211), stop:1 rgb(128, 128, 128));			/*模型配置左侧操作背景颜色，渐变*/
+   border-radius:10px;
+   border-bottom-left-radius:10px;
+}
+QWidget[whatsThis=input-box]>QLineEdit{
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   border: none;
+   color: #000;
+   font-size: 22px;
+   font-weight: 500;
+   padding-right: 28px;
+}
+QWidget[whatsThis=input-box]>QLabel{
+   position: absolute;
+   top: -50px;
+   left: 0;
+   font-size: 16px;
+   font-weight: 500;
+}
+QWidget[whatsThis=input-box]{
+   position: relative;
+   border-bottom: 2px solid rgb(135，206，250);	/*模型配置参数输入底部线条颜色*/
+   margin: 5px 0;
+}
+
+
+QWidget[whatsThis=theme-mainbox]{
+   border-radius:10px;
+   background-color:rgba(128,128,128,0.5);
+}
+QWidget[whatsThis=theme-operatebox]{
+   background-color: qlineargradient(x1:0, y0:0, x2:1, y2:1,stop:0 rgb(211, 211, 211), stop:1 rgb(128, 128, 128));				/*主题界面左侧选中主题大背景，渐变*/
+   border-radius:10px;
+   border-bottom-left-radius:10px;
+}
+QWidget[whatsThis=theme-operatebox]>QWidget>QLabel{
+   background-color: qlineargradient(x1:0, y0:0, x2:1, y2:1,stop:0 rgb(211, 211, 211), stop:1 rgb(128, 128, 128));				/*主题界面左侧当前主题展示，中间小矩形的背景颜色，渐变*/
+   border-radius:10px;
+}
+QWidget[whatsThis=theme-operatebox]>QWidget{
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #2E3648;
+    border-radius: 20px;
+    background-color: #fff;		/*包裹主题展示的边框背景*/
+
+}
+QWidget[whatsThis=theme-operatebox]>QWidget>QRadioButton{
+    color:#000;				/*当前主题下面的单选框的文字颜色*/
+    font-size:20px;
+}
+
+QWidget[whatsThis=singal-box-white]>QLabel{
+   background-color: #fff;
+   border: 1px solid #000;
+   border-radius:10px;
+   
+}
+QWidget[whatsThis=singal-box-white]>QRadioButton{
+    color:#000;
+    font-size:20px;
+}
+QWidget[whatsThis=singal-box-gray]>QLabel{
+   background-color: rgb(127,127,127);
+   border: 1px solid #000;
+   border-radius:10px;
+   
+}
+QWidget[whatsThis=singal-box-gray]>QRadioButton{
+    color:#000;
+    font-size:20px;
+}
+QWidget[whatsThis=singal-box-pink]>QLabel{
+   background-color: rgb(255,192,203);
+   border: 1px solid #000;
+   border-radius:10px;
+   
+}
+QWidget[whatsThis=singal-box-pink]>QRadioButton{
+    color:#000;
+    font-size:20px;
+}
+QWidget[whatsThis=singal-box-blue]>QLabel{
+   background-color: rgb(0,128,250);
+   border: 1px solid #000;
+   border-radius:10px;
+   
+}
+QWidget[whatsThis=singal-box-blue]>QRadioButton{
+    color:#000;
+    font-size:20px;
+}
+QWidget[whatsThis=singal-box-diy]>QLabel{
+   border: 1px solid #000;
+   border-radius:10px;
+   
+}
+QWidget[whatsThis=singal-box-diy]>QRadioButton{
+    color:#000;
+    font-size:20px;
+}
+

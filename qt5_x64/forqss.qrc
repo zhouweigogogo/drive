@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtcss/blue.qss</file>
+        <file>qtcss/pink.qss</file>
+        <file>qtcss/gray.qss</file>
+        <file>qtcss/white.qss</file>
+        <file>qtcss/register.qss</file>
+        <file>qtcss/login.qss</file>
+        <file>qtcss/source/list-down.png</file>
+        <file>qtcss/diypre.qss</file>
+    </qresource>
+</RCC>
